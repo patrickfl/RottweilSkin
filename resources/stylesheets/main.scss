@@ -1,8 +1,3 @@
-$rw-body-bg-color: #FEFFE0;
-$rw-primary: #FDE9C4;
-$rw-primary-hover: #FCE4B0;
-$rw-secondary: #E2D3B3;
-
 body.mediawiki.skin-rottweilskin.layout-rottweil-default {
     background-color: white;
 }
@@ -85,7 +80,8 @@ body.mediawiki.skin-rottweilskin.layout-rottweil-default > .container-fluid ul.n
 
 body.mediawiki.skin-rottweilskin.layout-rottweil-default > .container-fluid ul.nav-body li {
     border-bottom: 1px solid black;
-    padding: 1px;
+    padding: 0px;
+    margin-bottom: 0em;
 }
 
 body.mediawiki.skin-rottweilskin.layout-rottweil-default > .container-fluid ul.nav-body li .nav-heading {
@@ -193,7 +189,7 @@ body.mediawiki.skin-rottweilskin.layout-rottweil-default .rw-navigation-content 
 
 body.mediawiki.skin-rottweilskin.layout-rottweil-default .rw-navigation-content ul.rw-namespaces li a:hover {
     text-decoration: none;
-    border-bottom: 1px solid $rw-primary-hover;
+    border-bottom: 1px solid #FCE4B0;
 }
 
 body.mediawiki.skin-rottweilskin.layout-rottweil-default .rw-navigation-content ul.rw-views li a {
@@ -204,7 +200,7 @@ body.mediawiki.skin-rottweilskin.layout-rottweil-default .rw-navigation-content 
 
 body.mediawiki.skin-rottweilskin.layout-rottweil-default .rw-navigation-content ul.rw-views li a:hover {
     text-decoration: none;
-    border-bottom: 1px solid $rw-primary-hover;
+    border-bottom: 1px solid #FCE4B0;
 }
 
 body.mediawiki.skin-rottweilskin.layout-rottweil-default #content {
