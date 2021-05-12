@@ -1,0 +1,32 @@
+{
+	"@metadata": {
+		"authors": [
+			"Daniel Vogel"
+		]
+	},
+	"rottweil-skin-desc": "rottweil.net Skin",
+	"rottweil-skin-name": "Rottweil Skin",
+	"rottweil-navigation-main": "Hauptnavigation:",
+	"rottweil-navigation-subpages": "Unterseiten:",
+	"rottweil-navigation-external": "Externe Links:",
+	"rottweil-navigation-current": "Aktuell:",
+	"rottweil-navigation-interactive": "Interaktiv:",
+	"rottweil-navigation-new-pages": "Neue Seiten",
+	"rottweil-navigation-new-comments": "Neue Kommentare",
+	"rottweil-navigation-guestbook": "Gästebuch",
+	"rottweil-navigation-external-links": "*[http://www.rottweil.de Stadt Rottweil]\n*[http://www.leo-bw.de/web/guest/ergebnisliste-gross/-/Suchergebnis/liste/GROSS?_LEOBWSearchResult_WAR_sucheportlet_searchId=1466182499396 Landesarchiv Baden-Württemberg]\n*[http://www.narrenzunft-rottweil.de Narrenzunft Rottweil]\n*[http://www.kapuziner-rottweil.de Bürgerinitiative Kapuziner]\n*[http://www.markthalle-rottweil.de Markthalle Rottweil]\n*[http://www.feuerwehr.rottweil.de Feuerwehr Rottweil]\n*[http://www.eisenbahnfreunde-zollernbahn.de Eisenbahnfreunde Zollernbahn]\n*[http://buergerforum-rottweil.de Bürgerforum Perspektiven Rottweil]\n*[http://www.schwarzwaelder-bote.de Schwarzwälder Bote]\n*[http://www.nrwz.de Neue Rottweiler Zeitung]\n*[http://rottweil.net/frame/VereinRottweilerBilder/Presse/frame.php Presse zu den \"Rottweiler Bildern\"]\n",
+	"rottweil-navigation-toolbox": "Werkzeuge",
+	"rottweil-navigation-main-archive": "Archiv",
+	"rottweil-navigation-main-impressum": "Impressum",
+	"rottweil-navigation-main-forum": "Forum",
+	"rottweil-navigation-main-editor-title": "Editor",
+	"rottweil-navigation-main-editor-text": "Editor",
+	"rottweil-navigation-main-page-up-title": "Nach oben",
+	"rottweil-navigation-main-page-up-text": "Nach oben",
+	"rottweil-verein": "Rottweiler Bilder e. V.",
+	"rottweil-verein-page": "VereinRottweilerBilder",
+	"rottweil-navigation-center-editor-title": "Editor",
+	"rottweil-navigation-center-service-title": "Service / Hilfe",
+	"rottweil-navigation-center-service-page": "Service",
+	"rottweil-navigation-center-impressum-title": "Impressum"
+}

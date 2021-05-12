@@ -1,0 +1,29 @@
+{
+	"name"       : "mediawiki/Rottweil-skin",
+	"type"       : "mediawiki-skin",
+	"description": "A highly flexible MediaWiki skin using Bootstrap",
+	"keywords"   : [
+		"wiki",
+		"MediaWiki",
+		"skin",
+		"Twitter",
+		"Bootstrap"
+	],
+	"license"    : "",
+	"support"    : {
+	},
+	"autoload"   : {
+		"files": [
+			"src/SkinRottweilSkin.php",
+			"src/SkinRottweilTemplate.php"
+		],
+		"psr-4": {
+			"RottweilSkin\\" : "src"
+		}
+	},
+	"extra": {
+		"branch-alias": {
+			"dev-master": "1.x-dev"
+		}
+	}
+}

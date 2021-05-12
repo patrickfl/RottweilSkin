@@ -1,0 +1,87 @@
+@rw-body-bg-color: #FEFFE0;
+@rw-primary: #FDE9C4;
+@rw-primary-hover: #FCE4B0;
+@rw-secondary: #E2D3B3;
+
+body.mediawiki.skin-rottweilskin.layout-rottweil-default > .container {
+	margin-top: 0px;
+}
+
+a {
+	height: 32px;
+	line-height: 32px;
+}
+
+.row.sm-top {
+	height: 40px;
+	display: flex;
+	justify-content: space-between;
+	background-color: @rw-primary;
+
+	a {
+		display: block;
+		height: 40px;
+		line-height: 40px;
+		color: black;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	form.rw-search-form {
+		margin-bottom: 5px;
+		margin-top: 5px;
+	}
+}
+
+
+body.mediawiki.skin-rottweilskin.layout-rottweil-default .rw-navigation-content {
+	width: 100%;
+	padding-left: 0px;
+	padding-right: 0px;
+
+	ul {
+		display: flex;
+	}
+}
+
+
+.rw-navigation-center-container {
+	ul.rw-navigation-center-list {
+		display: block;
+			margin-top: 10px;
+
+		li.rw-navigation-center-item {
+			list-style: none;
+			margin-left: 0px;
+			margin-right: 0px;
+		}
+	}
+}
+
+a.rw-toggle-button {
+	i::before {
+		font-style: normal;
+		font-family: 'Glyphicons Halflings';
+		font-style: normal;
+		font-weight: 400;
+		line-height: 150%;
+		font-size: 150%;
+	}
+
+	&[data-toggle~="navigation-main"] i::before{
+		content: "\e236";
+	}
+
+	&[data-toggle~="rw-navigation-center"] i::before{
+		content: "\e235";
+	}
+
+	&[data-toggle~="rw-navigation-content"] i::before{
+		content: "\270f";
+	}
+
+	&[data-toggle~="rw-navigation-top"] i::before{
+		content: "\e008";
+	}
+}

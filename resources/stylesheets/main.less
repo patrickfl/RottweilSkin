@@ -1,0 +1,198 @@
+@rw-body-bg-color: #FEFFE0;
+@rw-primary: #FDE9C4;
+@rw-primary-hover: #FCE4B0;
+@rw-secondary: #E2D3B3;
+
+body.mediawiki.skin-rottweilskin.layout-rottweil-default {
+	background-color: white;
+
+	& > .container {
+		margin-top: 10px;
+		margin-left: 0px;
+		width: 100%;
+
+		.rw-banner {
+			display: block;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		.navigation-main{
+			z-index: 50;
+		}
+
+		ul.nav-body {
+			margin-top: 10px;
+			background-color: #FCF2D0;
+			list-style: none;
+			padding-left: 0px;
+			border: 1px solid black;
+
+			li {
+				border-bottom: 1px solid black;
+				padding: 1px;
+
+				.nav-heading {
+					display: block;
+					background-color: @rw-secondary;
+					font-weight: bold;
+					font-size: 12px;
+					//padding: 2px 5px;
+					padding-left: 5px;
+					height: 24px;
+					line-height: 24px;
+				}
+
+				a {
+					display: block;
+					font-size: 11px;
+					color: black;
+					//height: 24px;
+					line-height: 24px;
+					//padding: 2px 5px;
+					padding-left: 5px;
+					//overflow: hidden;
+
+					&:hover {
+						background-color: @rw-primary-hover;
+						text-decoration: none;
+					}
+
+					.rw-icon {
+						height: 100%;
+					}
+
+					.rw-icon-star,
+					.rw-icon-mainpage,
+					.rw-icon-editor,
+					.rw-icon-page-up,
+					.rw-icon-forum,
+					.rw-icon-search,
+					.rw-icon-impressum{
+						&::before{
+							content: " ";
+							padding-right: 18px;
+						}
+					}
+					.rw-icon-star::before {
+						background: url( "../images/stern_gelb_16x16.png" ) no-repeat;
+					}
+					.rw-icon-mainpage::before {
+						background: url( "../images/home.png" ) no-repeat;
+					}
+					.rw-icon-editor::before {
+						background: url( "../images/edit.png" ) no-repeat;
+					}
+					.rw-icon-page-up::before {
+						background: url( "../images/arrow_up.png" ) no-repeat;
+					}
+					.rw-icon-forum::before {
+						background: url( "../images/forum.png" ) no-repeat;
+					}
+					.rw-icon-search::before {
+						background: url( "../images/search.gif" ) no-repeat;
+					}
+					.rw-icon-impressum::before {
+						background: url( "../images/impressum.png" ) no-repeat;
+					}
+				}
+			}
+
+			&:last-of-type( 'li' ) {
+				border-bottom: none;
+			}
+		}
+	}
+
+	.rw-search-form{
+		float: right;
+		margin-left: 25px;
+		margin-bottom: 10px;
+	}
+	.rw-navigation-top{
+		margin-top: 5px;
+		ul{
+			list-style: none;
+			display: flex;
+			float: right;
+			li a{
+				margin-left: 20px;
+				font-size: 11px;
+				color: black;
+				&:hover{
+					text-decoration: none;
+					border-bottom: 1px solid @rw-primary-hover;
+				}
+			}
+		}
+	}
+	.rw-navigation-center{
+		font-size: 11px;
+		.rw-navigation-center-list {
+			padding-left: 0px;
+			justify-content: center;
+			flex-wrap: wrap;
+			border: 1px solid black;
+			.rw-navigation-center-item{
+				list-style: none;
+				border-bottom: 1px solid black;
+				.rw-navigation-center-link{
+					display: block;
+					height: 24px;
+					line-height: 24px;
+					padding-left: 5px;
+					padding-right: 5px;
+					background-color: #FFC125;
+					color: black;
+					white-space: pre;
+					&:hover{
+						background-color: #FFD700;
+						text-decoration: none;
+						color: black;
+					}
+					&:selected{
+						text-decoration: none;
+						color: black;
+					}
+				}
+			}
+		}
+	}
+	.rw-navigation-content{
+		display: flex;
+		justify-content: space-between;
+		ul{
+			list-style: none;
+			padding-left: 0px;
+			padding-top: 10px;
+			&.rw-namespaces{
+				li a{
+					margin-right: 20px;
+					font-size: 11px;
+					color: black;
+					&:hover{
+						text-decoration: none;
+						border-bottom: 1px solid @rw-primary-hover;
+					}
+				}
+			}
+			&.rw-views{
+				li a{
+					margin-left: 20px;
+					font-size: 11px;
+					color: black;
+					&:hover{
+						text-decoration: none;
+						border-bottom: 1px solid @rw-primary-hover;
+					}
+				}
+			}
+		}
+	}
+
+	#content{
+		padding-left: 0px;
+	}
+}

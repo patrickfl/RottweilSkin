@@ -1,0 +1,47 @@
+{
+	"name": "Rottweil",
+	"version": "1.0",
+	"author": "Daniel Vogel",
+	"url": "",
+	"descriptionmsg": "rottweil-skin-desc",
+	"namemsg": "rottweil-skin-name",
+	"license-name": "",
+	"type": "skin",
+	"ValidSkinNames": {
+		"rottweilskin": "RottweilSkin"
+	},
+	"MessagesDirs": {
+		"RottweilSkin": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"SkinRottweilSkin": "src/SkinRottweilSkin.php",
+		"SkinRottweilTemplate": "src/SkinRottweilTemplate.php"
+	},
+	"AutoloadNamespaces": {
+		"RottweilSkin\\": "src/"
+	},
+	"ResourceModules": {
+		"skin.rottweil.styles": {
+			"styles": {
+				"stylesheets/main.less": { "media": "all" },
+				"stylesheets/xs.less": { "media": "all and ( max-width: 768px )" },
+				"stylesheets/sm.less": { "media": "all and ( min-width: 768px ) and ( max-width: 992px )" },
+				"stylesheets/md.less": { "media": "all and ( min-width: 992px ) and ( max-width: 1200px )" },
+				"stylesheets/lg.less": { "media": "all and ( min-width: 1200px )" }
+			}
+		},
+		"skin.rottweil.scripts": {
+			"scripts": [
+				"js/ToggleButton.js"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteSkinPath": "RottweilSkin/resources"
+	},
+	"load_composer_autoloader": true,
+	"manifest_version": 2
+}
