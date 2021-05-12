@@ -1,0 +1,212 @@
+$rw-body-bg-color: #FEFFE0;
+$rw-primary: #FDE9C4;
+$rw-primary-hover: #FCE4B0;
+$rw-secondary: #E2D3B3;
+
+body.mediawiki.skin-rottweilskin.layout-rottweil-default {
+    background-color: white;
+}
+
+body.mediawiki.skin-rottweilskin.layout-rottweil-default > .container-fluid {
+    margin-top: 10px;
+    margin-left: 0px;
+    width: 100%;
+}
+
+body.mediawiki.skin-rottweilskin.layout-rottweil-default > .container-fluid .rw-banner {
+    display: block;
+}
+
+body.mediawiki.skin-rottweilskin.layout-rottweil-default > .container-fluid .rw-banner img {
+    width: 100%;
+}
+
+body.mediawiki.skin-rottweilskin.layout-rottweil-default > .container-fluid .rw-navigation-center-container ul.rw-navigation-center-list {
+    display: block;
+    margin-top: 10px;
+}
+
+body.mediawiki.skin-rottweilskin.layout-rottweil-default > .container-fluid .rw-navigation-center-container ul.rw-navigation-center-list li.rw-navigation-center-item {
+    list-style: none;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+body.mediawiki.skin-rottweilskin.layout-rottweil-default > .container-fluid .rw-navigation-center {
+    font-size: 0.75rem;
+    margin-top: -12px;
+}
+
+body.mediawiki.skin-rottweilskin.layout-rottweil-default > .container-fluid .rw-navigation-center .rw-navigation-center-list {
+    border: none;
+    display: flex;
+}
+
+body.mediawiki.skin-rottweilskin.layout-rottweil-default > .container-fluid .rw-navigation-center .rw-navigation-center-list .rw-navigation-center-item {
+    list-style: none;
+    border-bottom: 1px solid black;
+    margin-left: 0.5px;
+	margin-right: 0.5px;
+}
+
+body.mediawiki.skin-rottweilskin.layout-rottweil-default > .container-fluid .rw-navigation-center .rw-navigation-center-list .rw-navigation-center-item .rw-navigation-center-link {
+    display: block;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #FFC125;
+    color: black;
+    white-space: pre;
+}
+
+body.mediawiki.skin-rottweilskin.layout-rottweil-default > .container-fluid .rw-navigation-center .rw-navigation-center-list .rw-navigation-center-item .rw-navigation-center-link:hover {
+    background-color: #FFD700;
+    text-decoration: none;
+    color: black;
+}
+
+body.mediawiki.skin-rottweilskin.layout-rottweil-default > .container-fluid .rw-navigation-center .rw-navigation-center-list .rw-navigation-center-item .rw-navigation-center-link:selected {
+    text-decoration: none;
+    color: black;
+}
+
+body.mediawiki.skin-rottweilskin.layout-rottweil-default > .container-fluid .navigation-main {
+    z-index: 50;
+}
+
+body.mediawiki.skin-rottweilskin.layout-rottweil-default > .container-fluid ul.nav-body {
+    margin-top: 10px;
+    background-color: #FCF2D0;
+    list-style: none;
+    padding-left: 0px;
+    border: 1px solid black;
+}
+
+body.mediawiki.skin-rottweilskin.layout-rottweil-default > .container-fluid ul.nav-body li {
+    border-bottom: 1px solid black;
+    padding: 1px;
+}
+
+body.mediawiki.skin-rottweilskin.layout-rottweil-default > .container-fluid ul.nav-body li .nav-heading {
+    display: block;
+    background-color: #E2D3B3;
+    font-weight: bold;
+    font-size: 0.8rem;
+    padding-left: 5px;
+    height: 24px;
+    line-height: 24px;
+}
+
+body.mediawiki.skin-rottweilskin.layout-rottweil-default > .container-fluid ul.nav-body li a {
+    display: block;
+    font-size: 0.75rem;
+    color: black;
+    line-height: 24px;
+    padding-left: 5px;
+}
+
+body.mediawiki.skin-rottweilskin.layout-rottweil-default > .container-fluid ul.nav-body li a:hover {
+    background-color: #FCE4B0;
+    text-decoration: underline;
+}
+
+body.mediawiki.skin-rottweilskin.layout-rottweil-default > .container-fluid ul.nav-body li a .rw-icon {
+    height: 100%;
+}
+
+body.mediawiki.skin-rottweilskin.layout-rottweil-default > .container-fluid ul.nav-body li a .rw-icon-star::before,
+body.mediawiki.skin-rottweilskin.layout-rottweil-default > .container-fluid ul.nav-body li a .rw-icon-mainpage::before,
+body.mediawiki.skin-rottweilskin.layout-rottweil-default > .container-fluid ul.nav-body li a .rw-icon-editor::before,
+body.mediawiki.skin-rottweilskin.layout-rottweil-default > .container-fluid ul.nav-body li a .rw-icon-page-up::before,
+body.mediawiki.skin-rottweilskin.layout-rottweil-default > .container-fluid ul.nav-body li a .rw-icon-forum::before,
+body.mediawiki.skin-rottweilskin.layout-rottweil-default > .container-fluid ul.nav-body li a .rw-icon-nonprofit::before,
+body.mediawiki.skin-rottweilskin.layout-rottweil-default > .container-fluid ul.nav-body li a .rw-icon-search::before,
+body.mediawiki.skin-rottweilskin.layout-rottweil-default > .container-fluid ul.nav-body li a .rw-icon-archive::before,
+body.mediawiki.skin-rottweilskin.layout-rottweil-default > .container-fluid ul.nav-body li a .rw-icon-impressum::before,
+body.mediawiki.skin-rottweilskin.layout-rottweil-default > .container-fluid ul.nav-body li a .rw-icon-privacy::before {
+    content: " ";
+    padding-right: 18px;
+}
+
+body.mediawiki.skin-rottweilskin.layout-rottweil-default > .container-fluid ul.nav-body li a .rw-icon-star::before {
+    background: url("../images/star.svg") no-repeat;
+}
+
+body.mediawiki.skin-rottweilskin.layout-rottweil-default > .container-fluid ul.nav-body li a .rw-icon-mainpage::before {
+    background: url("../images/house-door.svg") no-repeat;
+}
+
+body.mediawiki.skin-rottweilskin.layout-rottweil-default > .container-fluid ul.nav-body li a .rw-icon-editor::before {
+    background: url("../images/pencil-square.svg") no-repeat;
+}
+
+body.mediawiki.skin-rottweilskin.layout-rottweil-default > .container-fluid ul.nav-body li a .rw-icon-page-up::before {
+    background: url("../images/arrow-up-left.svg") no-repeat;
+}
+
+body.mediawiki.skin-rottweilskin.layout-rottweil-default > .container-fluid ul.nav-body li a .rw-icon-forum::before {
+    background: url("../images/chat-right-text.svg") no-repeat;
+}
+
+body.mediawiki.skin-rottweilskin.layout-rottweil-default > .container-fluid ul.nav-body li a .rw-icon-nonprofit::before {
+    background: url("../images/image.svg") no-repeat;
+}
+
+body.mediawiki.skin-rottweilskin.layout-rottweil-default > .container-fluid ul.nav-body li a .rw-icon-search::before {
+    background: url("../images/search.svg") no-repeat;
+}
+
+body.mediawiki.skin-rottweilskin.layout-rottweil-default > .container-fluid ul.nav-body li a .rw-icon-archive::before {
+    background: url("../images/archive.svg") no-repeat;
+}
+
+body.mediawiki.skin-rottweilskin.layout-rottweil-default > .container-fluid ul.nav-body li a .rw-icon-impressum::before {
+    background: url("../images/file-earmark-person.svg") no-repeat;
+}
+
+body.mediawiki.skin-rottweilskin.layout-rottweil-default > .container-fluid ul.nav-body li a .rw-icon-privacy::before {
+    background: url("../images/shield-lock.svg") no-repeat;
+}
+
+body.mediawiki.skin-rottweilskin.layout-rottweil-default > .container-fluid ul.nav-body:last-of-type( 'li' ) {
+    border-bottom: none;
+}
+
+body.mediawiki.skin-rottweilskin.layout-rottweil-default .rw-navigation-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+body.mediawiki.skin-rottweilskin.layout-rottweil-default .rw-navigation-content ul {
+    list-style: none;
+    padding-left: 0px;
+    padding-top: 10px;
+    display: flex;
+}
+
+body.mediawiki.skin-rottweilskin.layout-rottweil-default .rw-navigation-content ul.rw-namespaces li a {
+    margin-right: 20px;
+    font-size: 0.75rem;
+    color: black;
+}
+
+body.mediawiki.skin-rottweilskin.layout-rottweil-default .rw-navigation-content ul.rw-namespaces li a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid $rw-primary-hover;
+}
+
+body.mediawiki.skin-rottweilskin.layout-rottweil-default .rw-navigation-content ul.rw-views li a {
+    margin-left: 20px;
+    font-size: 0.75rem;
+    color: black;
+}
+
+body.mediawiki.skin-rottweilskin.layout-rottweil-default .rw-navigation-content ul.rw-views li a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid $rw-primary-hover;
+}
+
+body.mediawiki.skin-rottweilskin.layout-rottweil-default #content {
+    padding-left: 0px;
+}

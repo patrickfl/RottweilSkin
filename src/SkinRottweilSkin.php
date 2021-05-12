@@ -3,7 +3,7 @@
  *
  * @ingroup Skins
  */
-class SkinRottweilSkin extends \SkinChameleon {
+class SkinRottweilSkin extends \Skins\Chameleon\Chameleon {
 	public $skinname = 'rottweilskin';
 	public $stylename = 'rottweilskin';
 	public $template = '\SkinRottweilTemplate';

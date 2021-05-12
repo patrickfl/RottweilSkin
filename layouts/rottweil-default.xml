@@ -1,73 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <structure xmlns="https://cmln.github.io/chameleon/schema/1.0/layout.rng">
 
-	<grid>
+	<grid mode="fluid">
+		<row>
+			<cell span="9">
 
-		<row>
-			<cell span="12" class="rw-menu-top">
-				<component type="\RottweilSkin\Components\Search" position="head"  class="rw-search-form  hidden-sm"></component>
-				<component type="\RottweilSkin\Components\NavigationTop" position="head"  class="hidden-xs"></component>
-			</cell>
-		</row>
-		<row class="sm-top hidden-xs hidden-md hidden-lg">
-			<cell span="2">
-				<component type="\RottweilSkin\Components\ToggleButton" data-toggle="navigation-main" data-toggleClass="hidden-sm"/>
-			</cell>
-			<cell span="2">
-				<component type="\RottweilSkin\Components\ToggleButton" data-toggle="rw-navigation-center" data-toggleClass="hidden-sm"/>
-			</cell>
-			<cell span="4">
-				<component type="\RottweilSkin\Components\Search" position="head" class="hidden-xs rw-search-form"></component>
-			</cell>
-		</row>
-		<row class="xs-top hidden-sm hidden-md hidden-lg">
-			<cell span="3">
-				<component type="\RottweilSkin\Components\ToggleButton" data-toggle="navigation-main" data-toggleClass="hidden-xs"/>
-			</cell>
-			<cell span="3">
-				<component type="\RottweilSkin\Components\ToggleButton" data-toggle="rw-navigation-center" data-toggleClass="hidden-xs"/>
-			</cell>
-			<cell span="3">
-				<component type="\RottweilSkin\Components\ToggleButton" data-toggle="rw-navigation-content" data-toggleClass="hidden-xs"/>
-			</cell>
-			<cell span="3">
-				<component type="\RottweilSkin\Components\ToggleButton" data-toggle="rw-navigation-top" data-toggleClass="hidden-xs"/>
-			</cell>
-		</row>
-		<row>
-			<cell span="12" class="xs-search-form">
-				<component type="\RottweilSkin\Components\Search" class="rw-search-form hidden-xs hidden-sm hidden-md hidden-lg"></component>
-			</cell>
-		</row>
-		<row>
-			<cell span="12" class="hidden-xs hidden-sm">
-				<component type="\RottweilSkin\Components\Logo" position="head"></component>
-			</cell>
-		</row>
-		<row>
-			<cell class="navigation-main hidden-xs hidden-sm col-md-4 col-lg-2">
-				<component type="\RottweilSkin\Components\Aside" flatten="navigation" showTools="no" showLanguages="no"></component>
-			</cell>
-
-			<cell class="col-xs-12 col-sm-12 col-md-8 col-lg-10">
-				<row>
-					<cell span="1">
-					</cell>
-					<cell span="8" class="rw-navigation-center-container">
-						<component type="\RottweilSkin\Components\NavigationCenter" class="hidden-xs hidden-sm"></component>
-					</cell>
-					<cell span="2">
-					</cell>
-				</row>
 				<row>
 					<cell span="12">
-						<component type="\RottweilSkin\Components\NavigationContent" class="hidden-xs"></component>
-						<component type="SiteNotice"></component>
-						<component type="MainContent"></component>
+						<component type="PersonalTools" hideNewtalkNotifier="yes" class="pull-right"/>						
 					</cell>
 				</row>
+
+				<row>
+					<cell span="12">
+						<component type="SearchBar" class="pull-right"/>
+					</cell>
+				</row>
+
 			</cell>
 		</row>
+		<row>
+			<cell span="12">
+				<component type="\RottweilSkin\Components\Logo"></component>
+			</cell>
+		</row>
+		<row>
+			<cell span="3" class="col-md-3">
+				<component type="\RottweilSkin\Components\Aside" flatten="navigation" showTools="no" showLanguages="no"></component>				
+			</cell>
+			<cell span="9" class="col-md-9">
+				<component type="\RottweilSkin\Components\NavigationContent"></component>
+				<component type="SiteNotice"></component>
+				<component type="MainContent"></component>
+			</cell>
+		</row>		
 
 	</grid>
 

@@ -22,14 +22,10 @@
 	"AutoloadNamespaces": {
 		"RottweilSkin\\": "src/"
 	},
-	"ResourceModules": {
+	"ResourceModules": {	
 		"skin.rottweil.styles": {
 			"styles": {
-				"stylesheets/main.less": { "media": "all" },
-				"stylesheets/xs.less": { "media": "all and ( max-width: 768px )" },
-				"stylesheets/sm.less": { "media": "all and ( min-width: 768px ) and ( max-width: 992px )" },
-				"stylesheets/md.less": { "media": "all and ( min-width: 992px ) and ( max-width: 1200px )" },
-				"stylesheets/lg.less": { "media": "all and ( min-width: 1200px )" }
+				"stylesheets/main.scss": { "media": "all" }				
 			}
 		},
 		"skin.rottweil.scripts": {

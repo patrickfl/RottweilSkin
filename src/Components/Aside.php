@@ -66,12 +66,21 @@ class Aside extends \Skins\Chameleon\Components\Structure {
 			'text' => $title->getFullText(),
 			'iconClass' => 'rw-icon-forum'
 		];
+		
+		$title = \Title::newFromText( wfMessage( 'rottweil-verein-page' )->plain() );
+		$items[] = [
+			'href' => $title->getFullURL(),
+			'title' => wfMessage( 'rottweil-verein' )->plain(),
+			'text' => wfMessage( 'rottweil-verein' )->plain(),
+			'iconClass' => 'rw-icon-nonprofit'
+		];
+
 
 		$title = \Title::makeTitle( NS_SPECIAL, 'Search');
 		$items[] = [
 			'href' => $title->getFullURL(),
-			'title' => $title->getText(),
-			'text' => $title->getText(),
+			'title' => wfMessage( 'search' )->plain(),
+			'text' => wfMessage( 'search' )->plain(),
 			'iconClass' => 'rw-icon-search'
 		];
 
@@ -80,7 +89,7 @@ class Aside extends \Skins\Chameleon\Components\Structure {
 			'href' => 'https://archive.rottweil.net', //'$title->getFullURL(),
 			'title' => $title->getFullText(),
 			'text' => $title->getFullText(),
-			'iconClass' => 'rw-icon-impressum'
+			'iconClass' => 'rw-icon-archive'
 		];		
 
 		$title = \Title::newFromText( wfMessage( 'rottweil-navigation-main-impressum' )->plain() );
@@ -91,6 +100,13 @@ class Aside extends \Skins\Chameleon\Components\Structure {
 			'iconClass' => 'rw-icon-impressum'
 		];
 
+		$title = \Title::newFromText( wfMessage( 'privacypage' )->plain() );
+		$items[] = [
+			'href' => $title->getFullURL(),
+			'title' => wfMessage( 'privacy' )->plain(),
+			'text' => wfMessage( 'privacy' )->plain(),
+			'iconClass' => 'rw-icon-privacy'
+		];
 
 
 		if( empty( $items ) ){
