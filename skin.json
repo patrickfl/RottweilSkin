@@ -1,7 +1,7 @@
 {
 	"name": "Rottweil",
-	"version": "1.0",
-	"author": "Daniel Vogel",
+	"version": "2.0",
+	"author": "Patrick Flaig",
 	"url": "",
 	"descriptionmsg": "rottweil-skin-desc",
 	"namemsg": "rottweil-skin-name",
@@ -24,14 +24,10 @@
 	},
 	"ResourceModules": {	
 		"skin.rottweil.styles": {
+			"class": "ResourceLoaderSkinModule",
 			"styles": {
-				"stylesheets/main.scss": { "media": "all" }				
+				"styles/RottweilSkin.scss": { "media": "all" }				
 			}
-		},
-		"skin.rottweil.scripts": {
-			"scripts": [
-				"js/ToggleButton.js"
-			]
 		}
 	},
 	"ResourceFileModulePaths": {

@@ -16,7 +16,7 @@ class SkinRottweilSkin extends \Skins\Chameleon\Chameleon {
 	 */
 	public function initPage( \OutputPage $out ) {
 		$out->addMeta( 'viewport', 'width=device-width, initial-scale=1.0' );
-		$out->addModuleScripts( array ( 'skin.rottweil.scripts' ) );
+		//$out->addModules( array ( 'skin.rottweil.scripts' ) );
 	}
 
 	/**
