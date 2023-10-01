@@ -15,6 +15,26 @@ class SkinRottweilSkin extends \Skins\Chameleon\Chameleon {
 	 * @param $out OutputPage
 	 */
 	public function initPage( \OutputPage $out ) {
+		// Add styles for MediaWiki 1.35
+		if ( version_compare( $wgVersion, '1.35', '<=' ) ) {
+			$moduleStyles = [
+				'mediawiki.skinning.content',
+				'mediawiki.legacy.commonPrint',
+				'mediawiki.ui.button',
+				'zzz.ext.bootstrap.styles'
+			];
+
+			if ( $out->isSyndicated() ) {
+				$moduleStyles[] = 'mediawiki.feedlink';
+			}
+
+			if ( $GLOBALS[ 'egChameleonEnableExternalLinkIcons' ] === true ) {
+				$moduleStyles[] = 'mediawiki.skinning.content.externallinks';
+			}
+
+			$out->addModuleStyles( $moduleStyles );
+		}		
+		
 		$out->addMeta( 'viewport', 'width=device-width, initial-scale=1.0' );
 		//$out->addModules( array ( 'skin.rottweil.scripts' ) );
 	}
