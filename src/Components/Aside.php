@@ -42,7 +42,9 @@ class Aside extends \Skins\Chameleon\Components\Structure {
 		];
 
 		$title = $this->getSkin()->getTitle();
-		if( ( !$title->isSpecialPage() ) && ( $title->userCan( 'edit' ) ) ){
+		$user = $this->getUser();
+		$userCanEdit = false;
+		if( ( !$title->isSpecialPage() ) && ( MediaWikiServices::getInstance()->getPermissionManager()->userCan( 'edit', $user, $title ) ) ){
 			$items[] = [
 				'href' => $title->getEditURL(),
 				'title' => wfMessage( 'rottweil-navigation-main-editor-title' )->plain(),
