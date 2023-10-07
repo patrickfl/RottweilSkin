@@ -313,20 +313,22 @@ class Aside extends \Skins\Chameleon\Components\Structure {
 			$items[$key] = $value;
 		}
 
-		/* 2019-02-08 delete */
+		/* delete */
 		if( isset( $contentNavigation['actions']['delete'] ) ){
 			$items['delete'] = $contentNavigation['actions']['delete'];
-		}
-		if( !isset( $items['delete']['title'] ) ){
-			$items['delete']['title'] = $items['delete']['text'];
+		
+			if( !isset( $items['delete']['title'] ) ){
+				$items['delete']['title'] = $items['delete']['text'];
+			}
 		}
 
-		/* 2019-02-08 move */
+		/* move */
 		if( isset( $contentNavigation['actions']['move'] ) ){
 			$items['move'] = $contentNavigation['actions']['move'];
-		}
-		if( !isset( $items['move']['title'] ) ){
-			$items['move']['title'] = $items['move']['text'];
+		
+			if( !isset( $items['move']['title'] ) ){
+				$items['move']['title'] = $items['move']['text'];
+			}
 		}
 
 		if( empty( $items ) ){
@@ -339,7 +341,7 @@ class Aside extends \Skins\Chameleon\Components\Structure {
 			$id = ( isset( $item['id'] ) )? ' id="'. $item['id'] . '" ': '';
 			$class = ( isset( $item['class'] ) )? ' class="'. $item['class'] . '" ': '';
 
-			$html .= '<li><a ' . $item['id']  . $item['class'] . ' href="' . $item['href'] . '" title="' . $item['title'] . '"><span class="rw-icon"></span><span class="rw-text">' . $item['text'] . '</span></a></li>';
+			$html .= '<li><a ' . $id  . $class . ' href="' . $item['href'] . '" title="' . $item['title'] . '"><span class="rw-icon"></span><span class="rw-text">' . $item['text'] . '</span></a></li>';
 		}
 
 		return $html;
