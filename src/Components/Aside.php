@@ -169,7 +169,14 @@ class Aside extends \Skins\Chameleon\Components\Structure {
 		foreach ( $subpages as $subpage ) {
 			$wikipage = \WikiPage::factory( $subpage );
 			$parserOptions = $wikipage->makeParserOptions( $this->getSkin()->getContext() );
-			$defaultsort = $wikipage->getParserOutput( $parserOptions )->getProperty( 'defaultsort' );
+			$parserOutput = $article->getParserOutput( $parserOptions );
+
+			$defaultsort = [];
+			if ( method_exists( $parserOutput, 'getPageProperty' ) ) {
+				$defaultsort = $wikipage->getParserOutput( $parserOptions )->getPageProperty( 'defaultsort' );
+			} else {
+				$defaultsort = $wikipage->getParserOutput( $parserOptions )->getProperty( 'defaultsort' );
+			}
 
 			if ( !$defaultsort ){
 				continue;
