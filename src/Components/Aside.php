@@ -24,10 +24,12 @@ class Aside extends \Skins\Chameleon\Components\Structure {
 		/*
 		 * Startseite
 		 * "Nach oben"
-		 * Editor
-		 * Forum
+		 * Verein Rottweiler Bilder e.V.
 		 * Suchen
+		 * Archiv
+		 * Instagran
 		 * Impressum
+		 * Datenschutz
 		 */
 		$items = [];
 
@@ -59,14 +61,6 @@ class Aside extends \Skins\Chameleon\Components\Structure {
 			];
 		}
 
-		$title = \Title::newFromText( wfMessage( 'rottweil-navigation-main-forum' )->plain() );
-		$items[] = [
-			'href' => 'https://forum.rottweil.net', //'$title->getFullURL(),
-			'title' => $title->getFullText(),
-			'text' => $title->getFullText(),
-			'iconClass' => 'rw-icon-forum'
-		];
-		
 		$title = \Title::newFromText( wfMessage( 'rottweil-verein-page' )->plain() );
 		$items[] = [
 			'href' => $title->getFullURL(),
@@ -74,7 +68,6 @@ class Aside extends \Skins\Chameleon\Components\Structure {
 			'text' => wfMessage( 'rottweil-verein' )->plain(),
 			'iconClass' => 'rw-icon-nonprofit'
 		];
-
 
 		$title = \Title::makeTitle( NS_SPECIAL, 'Search');
 		$items[] = [
@@ -90,6 +83,14 @@ class Aside extends \Skins\Chameleon\Components\Structure {
 			'title' => $title->getFullText(),
 			'text' => $title->getFullText(),
 			'iconClass' => 'rw-icon-archive'
+		];		
+
+		$title = \Title::newFromText( wfMessage( 'rottweil-navigation-main-instagram' )->plain() );
+		$items[] = [
+			'href' => 'https://www.instagram.com/rottweiler_bilder/', //'$title->getFullURL(),
+			'title' => $title->getFullText(),
+			'text' => $title->getFullText(),
+			'iconClass' => 'rw-icon-instagram'
 		];		
 
 		$title = \Title::newFromText( wfMessage( 'rottweil-navigation-main-impressum' )->plain() );
