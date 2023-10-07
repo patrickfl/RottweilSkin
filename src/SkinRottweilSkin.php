@@ -8,62 +8,29 @@ class SkinRottweilSkin extends \Skins\Chameleon\Chameleon {
 	public $stylename = 'rottweilskin';
 	public $template = '\SkinRottweilTemplate';
 	public $useHeadElement = true;
-
+	
 	/**
 	 * Add CSS via ResourceLoader
 	 *
 	 * @param $out OutputPage
 	 */
 	public function initPage( \OutputPage $out ) {
-		// Add styles for MediaWiki 1.35
-		if ( version_compare( $wgVersion, '1.35', '<=' ) ) {
-			$moduleStyles = [
-				'mediawiki.skinning.content',
-				'mediawiki.legacy.commonPrint',
-				'mediawiki.ui.button',
-				'zzz.ext.bootstrap.styles'
-			];
-
-			if ( $out->isSyndicated() ) {
-				$moduleStyles[] = 'mediawiki.feedlink';
-			}
-
-			if ( $GLOBALS[ 'egChameleonEnableExternalLinkIcons' ] === true ) {
-				$moduleStyles[] = 'mediawiki.skinning.content.externallinks';
-			}
-
-			$out->addModuleStyles( $moduleStyles );
-		}		
-		
-		$out->addMeta( 'viewport', 'width=device-width, initial-scale=1.0' );
-		//$out->addModules( array ( 'skin.rottweil.scripts' ) );
+		parent::initPage( $out );
+		$out->addModuleStyles( ['ext.bootstrap.styles'] );
 	}
 
 	/**
-	 * @param $out OutputPage
+	 * @throws \MWException
 	 */
-	function setupSkinUserCss( \OutputPage $out ) {
-		$out->addModuleStyles( array( 'skin.rottweil.styles' ) );
-		parent::setupSkinUserCss( $out );
-	}
-
-	/**
-	 * This will be called by OutputPage::headElement when it is creating the
-	 * "<body>" tag, - adds output property bodyClassName to the existing classes
-	 * @param OutputPage $out
-	 * @param array $bodyAttrs
-	 */
-	public function addToBodyAttributes( $out, &$bodyAttrs ) {
+	function addSkinModulesToOutput() {
+		parent::addSkinModulesToOutput();
+		$output = $this->getOutput();
+		$output->addModules( ['skin.rottweil.styles'] );
 	}
 
 	protected function getLayoutFilePath() {
 		global $IP;
 		return "$IP/skins/RottweilSkin/layouts/rottweil-default.xml";
-	}
-
-	public function getDefaultModules() {
-		$modules = parent::getDefaultModules();
-		return $modules;
 	}
 
 	public function subPageSubtitle( $out = null ) {
@@ -90,7 +57,6 @@ class SkinRottweilSkin extends \Skins\Chameleon\Chameleon {
 			if( $parserOutput ) {
 				$displayName = $parserOutput->getTitleText();
 			}
-			//$displayName = $wikipage->getParserOutput( $parserOptions )->getTitleText();
 			$linkList[] = $linkRenderer->makeLink( $title, $displayName );
 		}
 
