@@ -25,7 +25,7 @@ class NavigationCenter extends \Skins\Chameleon\Components\Structure {
 			$html .= $this->addMainPageLink();
 			$html .= $this->addClubLink();
 
-			if ( $title->userCan( 'edit' ) ) {
+			if ( \MediaWiki\MediaWikiServices::getInstance()->getPermissionManager()->userCan( 'edit', $user, $title ) ) {
 				$html .= $this->addEditorLink();
 			}
 
